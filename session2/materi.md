@@ -192,12 +192,12 @@ Untuk contoh implementasi-nya kalian bisa lihat contoh dibawah.
 
 ```html
 <head>
-  <meta property="og:title" content="The Rock" />
+  <meta property="og:title" content="Mizuki" />
   <meta property="og:type" content="video.movie" />
-  <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
   <meta
-    property="og:image"
-    content="https://ia.media-imdb.com/images/rock.jpg"
+    property="og:url"
+    content="https://projectsekai.fandom.com/wiki/Akiyama_Mizuki"
   />
+  <meta property="og:image" content="https://yoshi.moe/img/pic_001.jpg" />
 </head>
 ```
