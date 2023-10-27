@@ -28,9 +28,6 @@
   - [4. CSS Containment](#4-css-containment)
   - [5. CSS Houdini](#5-css-houdini)
 - [Best Practices](#best-practices)
-  - [1. Jangan Mengulang Diri (Don’t Repeat Yourself)](#1-jangan-mengulang-diri-dont-repeat-yourself)
-  - [2. Organisasi Stylesheets](#2-organisasi-stylesheets)
-  - [3. Komentari Kode Kamu](#3-komentari-kode-kamu)
 - [Resources Lanjutan](#resources-lanjutan)
 
 ---
