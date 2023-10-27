@@ -3,7 +3,14 @@
 ## Table of Contents
 
 - [Introduction](#introduction)
+- [CSS Usage](#css-usage)
+  - [1. Internal CSS](#1-internal-css)
+  - [2. External CSS](#2-external-css)
+  - [3. Inline CSS](#3-inline-css)
 - [Selectors and Properties](#selectors-and-properties)
+  - [Basic Selectors](#basic-selectors)
+  - [Combinators](#combinators)
+  - [Pseudo-classes and Pseudo-elements](#pseudo-classes-and-pseudo-elements)
 - [Box Model](#box-model)
 - [Styling Text](#styling-text)
 - [Colors and Backgrounds](#colors-and-backgrounds)
@@ -11,9 +18,19 @@
 - [Grid](#grid)
 - [Positioning](#positioning)
 - [Animations and Transitions](#animations-and-transitions)
+  - [Transitions](#transitions)
+  - [Animations](#animations)
 - [Responsive Design](#responsive-design)
 - [Advanced Topics](#advanced-topics)
+  - [1. Variabel CSS](#1-variabel-css)
+  - [2. Fungsi CSS](#2-fungsi-css)
+  - [3. Selektor CSS Level 4](#3-selektor-css-level-4)
+  - [4. CSS Containment](#4-css-containment)
+  - [5. CSS Houdini](#5-css-houdini)
 - [Best Practices](#best-practices)
+  - [1. Jangan Mengulang Diri (Don’t Repeat Yourself)](#1-jangan-mengulang-diri-dont-repeat-yourself)
+  - [2. Organisasi Stylesheets](#2-organisasi-stylesheets)
+  - [3. Komentari Kode Kamu](#3-komentari-kode-kamu)
 - [Resources Lanjutan](#resources-lanjutan)
 
 ---
@@ -28,6 +45,106 @@ CSS (Cascading Style Sheets) adalah bahasa stylesheet yang digunakan untuk mempr
 
 ---
 
+## CSS Usage
+
+Ada tiga cara utama untuk menerapkan CSS pada halaman HTML: internal, external, dan inline.
+
+### 1. Internal CSS
+
+CSS internal ditempatkan langsung di dalam dokumen HTML menggunakan elemen `<style>`. Elemen ini biasanya ditempatkan di dalam bagian `<head>` dari dokumen.
+
+#### Contoh Penggunaan:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dokumen Contoh</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      h1 {
+        color: #3498db;
+      }
+      p {
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ini adalah Judul</h1>
+    <p>Ini adalah paragraf contoh untuk demonstrasi CSS internal.</p>
+  </body>
+</html>
+```
+
+### 2. External CSS
+
+CSS eksternal memungkinkan Anda menulis CSS style di file terpisah yang nanti dihubungkan ke berbagai halaman HTML. Ini membantu menjaga struktur kode lebih rapi dan memudahkan _maintenance_.
+
+#### Contoh Penggunaan:
+
+**styles.css**
+
+```css
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+  color: #e74c3c;
+}
+p {
+  line-height: 1.6;
+}
+```
+
+**index.html**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Dokumen Contoh</title>
+  </head>
+  <body>
+    <h1>Ini adalah Judul</h1>
+    <p>Ini adalah paragraf contoh untuk demonstrasi CSS eksternal.</p>
+  </body>
+</html>
+```
+
+### 3. Inline CSS
+
+CSS inline diterapkan langsung pada elemen HTML menggunakan atribut `style`.
+
+#### Contoh Penggunaan:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dokumen Contoh</title>
+  </head>
+  <body>
+    <h1 style="color: #8e44ad;">Ini adalah Judul</h1>
+    <p style="line-height: 1.8;">
+      Ini adalah paragraf contoh untuk demonstrasi CSS inline.
+    </p>
+  </body>
+</html>
+```
+
 ## Selectors and Properties
 
 Selectors adalah patterns yang digunakan untuk memilih element(s) yang akan kalian style.
@@ -36,6 +153,10 @@ Ada dua jenis selector:
 
 1. Basic Selectors
 2. Combinators
+
+Ada juga dua jenis properties tambahan pada selector:
+
+1. Pseudo-classes and Pseudo-elements
 
 ### Basic Selectors
 
@@ -665,3 +786,17 @@ div {
 - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [CSS Tricks](https://css-tricks.com/)
 - [Can I Use](https://caniuse.com/)
+
+---
+
+## Thank you!
+
+Terima kasih sudah membaca materi CSS ini. Semoga bermanfaat!
+
+<p align="center">
+  <img src="image-1.png" height='300'>
+</p>
+
+<p align="center">
+  curated with 🩷 from <a href="https://yoshi.moe" targer="_blank">yoshikazuuu :)</a>
+</p>
