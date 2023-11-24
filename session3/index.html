@@ -1,0 +1,31 @@
+<h1 id="title">Original Title</h1>
+<button id="button">Click</button>
+
+<script>
+  // Get button and title elements
+  const button = document.getElementById('button');
+  const title = document.getElementById('title');
+
+  // Add click event listener to button 
+  button.addEventListener('click', () => {
+
+    // Change title text
+    title.textContent = 'Title updated!';
+
+    // Add class to title
+    title.classList.add('blue');
+
+  });
+
+  // Function to change button text on click
+  function changeButtonText() {
+    if (button.textContent === 'Click') {
+      button.textContent = 'Clicked';
+    } else {
+      button.textContent = 'Click';
+    }
+  }
+
+  // Add event listener to run function on button click
+  button.addEventListener('click', changeButtonText);
+</script>
