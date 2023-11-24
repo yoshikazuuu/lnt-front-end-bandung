@@ -12,7 +12,7 @@
   - [Operasi Logika](#operasi-logika)
   - [Percabangan](#percabangan)
   - [Perulangan](#perulangan)
-  - [Fungsi](#fungsi)
+- [Fungsi](#fungsi)
 - [Modul](#modul)
 - [Arrow Functions](#arrow-functions)
 - [Manipulasi DOM](#manipulasi-dom)
@@ -92,6 +92,34 @@ const pi = 3.14; // Tidak dapat diubah
 ```
 
 Hindari penggunaan `var` dalam karena merupakan cara lama yang digunakan untuk kompatibilitas perangkat lama.
+
+### String
+
+String merupakan tipe data yang merepresentasikan teks. Ini dapat dibuat dengan menggunakan tanda kutip tunggal atau ganda.
+
+```js
+let name = "John";
+let name = "John";
+let name = `John`;
+```
+
+Anda dapat menggabungkan string dengan menggunakan operator `+`:
+
+```js
+let firstName = "John";
+let lastName = "Doe";
+
+console.log(firstName + " " + lastName); // John Doe
+```
+
+String literal.
+
+```js
+let firstName = "John";
+let lastName = "Doe";
+
+console.log(`${firstName} ${lastName}`); // John Doe
+```
 
 ### Object
 
@@ -238,7 +266,7 @@ fruits.forEach((fruit) => {
 });
 ```
 
-### Fungsi
+## Fungsi
 
 Gunakan `function` untuk mendefinisikan fungsi:
 
@@ -256,6 +284,18 @@ Gunakan `=>` untuk mendefinisikan fungsi anonim ([Arrow Functions](#arrow-functi
 let sum = (a, b) => a + b;
 
 console.log(sum(10, 3)); // 13
+```
+
+## Array
+
+Array merupakan struktur data yang merepresentasikan kumpulan nilai. Ini terdiri dari elemen yang dapat diakses menggunakan indeks.
+
+```js
+let fruits = ["apel", "pisang", "mangga"];
+
+console.log(fruits[0]); // apel
+console.log(fruits[1]); // pisang
+console.log(fruits[2]); // mangga
 ```
 
 ## Modul
@@ -316,6 +356,8 @@ console.log(sum(10, 3)); // 13
 ## Manipulasi DOM
 
 DOM (Document Object Model) merepresentasikan elemen HTML sebagai objek yang dapat dimanipulasi dengan JavaScript.
+
+Bacaan lanjutan: [DOM Manipulation](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
 
 Dapatkan elemen DOM berdasarkan ID-nya:
 
