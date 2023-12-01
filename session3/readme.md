@@ -298,7 +298,7 @@ console.log(fruits[1]); // pisang
 console.log(fruits[2]); // mangga
 ```
 
-## Modul
+## Modul (ES MODULE)
 
 JavaScript mendukung modul untuk membagi kode menjadi beberapa file yang dapat diimpor dan diekspor.
 
