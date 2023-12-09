@@ -1,0 +1,93 @@
+.quote-title {
+  font-size: 5rem;
+  font-family: "Satista", "Hiragino Mincho ProN", serif;
+  color: rgb(223, 173, 207);
+}
+
+.container-about {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.quote-text {
+  font-size: large;
+  text-align: center;
+  width: 50%;
+  font-weight: 100;
+  font-style: italic;
+  text-wrap: balance;
+}
+
+.background-title {
+  font-size: 2.5rem;
+  font-family: "Satista", "Hiragino Mincho ProN", serif;
+  color: rgb(223, 173, 207);
+}
+
+.background-text {
+  width: 25rem;
+  line-height: 1.6rem;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.container-background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.row {
+  display: flex;
+  gap: 2rem;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+
+.flex {
+  display: flex;
+  width: 50%;
+
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .container-about {
+    height: 50vh;
+  }
+
+  .quote-title {
+    font-size: 2rem;
+  }
+
+  .quote-text {
+    width: 80%;
+    font-size: small;
+  }
+
+  .background-title {
+    font-size: 2rem;
+  }
+
+  .background-text {
+    width: 80%;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flex {
+    width: 100%;
+  }
+}
