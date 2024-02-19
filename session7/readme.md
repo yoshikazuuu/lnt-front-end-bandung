@@ -3,6 +3,7 @@
 ## Daftar Isi
 
 - [Apa itu Tailwind CSS?](#apa-itu-tailwind-css)
+- [Cheat Sheet](#cheat-sheet)
 - [Instalasi Tailwind CSS](#instalasi-tailwind-css)
 - [Konfigurasi Tailwind CSS](#konfigurasi-tailwind-css)
 - [Menggunakan Tailwind CSS](#menggunakan-tailwind-css)
@@ -18,6 +19,10 @@
 </p>
 
 _Tailwind CSS_ adalah sebuah _utility-first_ CSS framework yang memungkinkan kita untuk membuat desain web yang keren tanpa perlu menulis CSS dari awal. _Utility-first_ artinya kita menggunakan kelas-kelas yang disediakan oleh Tailwind CSS untuk membuat desain web kita, tanpa perlu menulis CSS custom.
+
+## Cheat Sheet
+
+Link: [https://nerdcave.com/tailwind-cheat-sheet](https://nerdcave.com/tailwind-cheat-sheet)
 
 ## Instalasi Tailwind CSS
 
