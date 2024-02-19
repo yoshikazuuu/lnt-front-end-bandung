@@ -1,5 +1,5 @@
 function scrollFunction() {
-  const GAP = 30;
+  const GAP = 115;
   const header = document.querySelector("header");
   const nav = document.querySelector("nav");
   const img = document.querySelector("img");
