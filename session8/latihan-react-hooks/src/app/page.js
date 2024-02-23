@@ -70,28 +70,6 @@
 
 // }
 
-"use client";
-
-import { createContext, useContext, useState } from "react";
-
-const ThemeContext = createContext();
-
-export default function Home() {
-  const [theme, setTheme] = useState("light");
-  const [isDark, setIsDark] = useState(false);
-
-  const handleTheme = () => {
-    setIsDark(prev => !prev);
-    setTheme(prev => prev === "light" ? "dark" : "light");
-  }
-
-  return (
-    <ThemeContext.Provider value={{ theme, handleTheme, isDark }}>
-      <Text />
-    </ThemeContext.Provider>
-  )
-}
-
 function Text() {
   const { theme, handleTheme, isDark } = useContext(ThemeContext);
   return (
