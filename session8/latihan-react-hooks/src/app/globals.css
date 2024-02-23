@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+.card-holder {
+  @apply w-72 lg:w-[500px] h-32 lg:bg-yellow-200 bg-white rounded-2xl hover:bg-blue-400 hover:scale-105 transition-all duration-200 active:scale-95 cursor-pointer;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(0, 0, 0);
+}
