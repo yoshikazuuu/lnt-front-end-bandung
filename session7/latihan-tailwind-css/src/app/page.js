@@ -2,15 +2,18 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-4 w-screen h-screen justify-center items-center ">
-      <div className="w-72 h-28 bg-white rounded-2xl hover:bg-blue-400 hover:scale-105 transition-all duration-200 active:scale-95 cursor-pointer">
-        <div className="flex gap-4 w-full justify-center items-center h-full p-5">
-          <div className="">
-            <Image src="/vercel.svg" alt="" width={100} height={100} />
+    <div className="absolute top-1/2 right-1/2 translate-x-[-50%] translate-y-[-50%]">
+      {/* Halo Ibu! */}
+      <div className="w-72 h-28 bg-gradient-to-tl from-blue-300 to-yellow-300 rounded-2xl delay-500 hover:bg-blue-400 hover:scale-105 transition-all duration-200 active:scale-95 cursor-pointer">
+        <div className="flex w-full justify-center items-center h-full p-5">
+          <div className="grow text-center bg-red-400">
+            W
+            {/* <Image src="/vercel.svg" alt="" width={100} height={100} /> */}
           </div>
-          <div className="text-black space-y-2">
-            <p className="text-2xl font-bold">ChitChat</p>
-            <p className="text-gray-500">You have a new message!</p>
+          <div className="grow text-center bg-blue-400">
+            S
+            {/* <p className="text-2xl font-bold">ChitChat</p>
+            <p className="text-gray-500">You have a new message!</p> */}
           </div>
         </div>
       </div>

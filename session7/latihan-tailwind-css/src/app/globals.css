@@ -12,7 +12,7 @@
   @apply w-72 lg:w-[500px] h-32 lg:bg-yellow-200 bg-white rounded-2xl hover:bg-blue-400 hover:scale-105 transition-all duration-200 active:scale-95 cursor-pointer;
 }
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -20,4 +20,4 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */
